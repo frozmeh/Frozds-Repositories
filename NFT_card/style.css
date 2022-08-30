@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue--line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --outfit: 'Outfit', sans-serif;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--outfit);
+  font-size: 18px;
+  background-color: var(--very-dark-blue-main);
+}
+
+.card{
+  display: flex;
+  margin: 60px auto;
+  width: 330px;
+  height: 545px;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: var(--very-dark-blue-card);
+  box-shadow: 0 14px 10px 14px rgba(0, 0, 0, 0.151);
+}
+
+.card__img{
+  width: 100%;
+  height: 56%;
+  background-image: url(images/image-equilibrium.jpg);
+  border-radius: 10px;
+  background-size: 100% 100%;
+  background: cover;
+}
+
+.card__texts{
+  height: 44%;
+}
+
+.card__title{
+  color: var(--white);
+  margin: 30px 0 14px;
+  font-size: 20px;
+}
+
+.card__paragraph{
+  color: var(--soft-blue);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.card__info{
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  font-weight: 400;
+  margin: 15px 0 20px;
+  
+}
+
+.card__price{
+  display: flex;
+  gap: 5px;
+}
+
+.card__price--amount{
+  color: var(--cyan);
+  font-weight: 400;
+}
+
+.card__price--time{
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.card__footer{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--very-dark-blue--line);
+  padding: 20px 0;
+}
+
+.card__autor{
+  align-items: center;
+  color: var(--soft-blue);
+  font-size: 15px;
+}
+
+.card__autor--name{
+  color: var(--white);
+}
+
+.card__avatar{
+  margin-right: 15px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
